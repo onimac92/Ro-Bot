@@ -1,5 +1,5 @@
 <?php
-//error_reporting(0);
+error_reporting(0);
 header("Content-type: application/json");
 
 if ($_GET['user'] or $argv[1]) {
@@ -90,8 +90,8 @@ if ($user !== false) {
   $header  = substr($response, 0, $h_size);
   $body    = substr($response, $h_size);
   $array   = explode(PHP_EOL, $header);
-  $session = explode(": ", $array[5])[1];
-  $bot     = explode(": ", $array[6])[1];
+  $session = trim(explode(": ", $array[5])[1]);
+  $bot     = trim(explode(": ", $array[6])[1]);
 
   echo '{';
   echo '"id":"'.$session.'",';
