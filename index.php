@@ -9,7 +9,7 @@
 	<style type="text/css">
 	* {
 		font-family: Lato,Tahoma,Arial,serif;
-		font-size: 100%;
+		font-size: 0.95rem;
 	}
 	#m {
 		color: #34bb08;
@@ -19,14 +19,21 @@
 		color: #0869bb;
 		font-weight: bold;
 	}
+	#inner {
+	  display: table;
+	  margin: 0 auto;
+	}
+	#outer {
+	  width:100%
+	}
 	</style>
 </head>
 <body>
-
-<div align="center">
-<input onkeyup="z()" autocomplete="off" id="user">
-<button onclick="x()" type="submit">Enviar</button>
-</div>
-
+	<div id="outer">
+		<div id="inner">
+			<input onkeyup="z()" autocomplete="off" id="user">
+			<button onclick="x()" type="submit">Enviar</button>
+		</div>
+	</div>
 </body>
 </html>

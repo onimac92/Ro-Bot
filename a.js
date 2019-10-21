@@ -24,6 +24,7 @@ function x() {
 			$("<p id='m'>"+bot+"</p>").insertBefore('#user');
 			$("#user").prop("disabled", false);
 			$("[type=submit]").prop("disabled", false);
+			$("#user").focus();
 			console.log("Maquina: "+bot);
 		},
 		error: function(jqXHR, textStatus, errorThrown){
