@@ -32,6 +32,7 @@
 	<div id="outer">
 		<div id="inner">
 			<input onkeyup="z()" autocomplete="off" id="user">
+			<input style="display: none;" autocomplete="off" id="id" placeholder="ID">
 			<button onclick="x()" type="submit">Enviar</button>
 		</div>
 	</div>
