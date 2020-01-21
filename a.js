@@ -2,7 +2,8 @@ function x() {
 	$("#user").prop("disabled", true);
 	$("[type=submit]").prop("disabled", true);
 	if (typeof id == "undefined") {
-		id = false;
+		//id = false;
+		user = $("#user").val();
 		if (typeof cookie == "undefined") {
 			cookie = false;
 		}
