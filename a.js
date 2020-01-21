@@ -1,6 +1,8 @@
 function x() {
 	$("#user").prop("disabled", true);
 	$("[type=submit]").prop("disabled", true);
+	console.log(id);
+	console.log(cookie);
 	if (typeof id == "undefined") {
 		//id = false;
 		id = $("#id").val();
