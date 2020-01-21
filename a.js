@@ -4,12 +4,12 @@ function x() {
 	//console.log(idd);
 	//console.log(cookie);
 	if (typeof idd == "undefined") {
-		//id = false;
-		idd = $("#id").val();
+		idd = false;
 		if (typeof cookie == "undefined") {
 			cookie = false;
 		}
 	}
+	idd = $("#id").val();
 	user = $("#user").val();
 	$('#user').val('');
 	user = user.charAt(0).toUpperCase() + user.slice(1);
