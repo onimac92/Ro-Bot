@@ -1,11 +1,11 @@
 function x() {
 	$("#user").prop("disabled", true);
 	$("[type=submit]").prop("disabled", true);
-	console.log(id);
+	console.log(idd);
 	console.log(cookie);
-	if (typeof id == "undefined") {
+	if (typeof idd == "undefined") {
 		//id = false;
-		id = $("#id").val();
+		idd = $("#id").val();
 		if (typeof cookie == "undefined") {
 			cookie = false;
 		}
@@ -18,11 +18,11 @@ function x() {
 	$.ajax({
 		url: 'x.php',
 		type: 'get',
-		data: {user:user, id:id, cookie:cookie},
+		data: {user:user, id:idd, cookie:cookie},
 		success: function (data) {
 			bot    = decodeURIComponent(data.bot);
 			user   = data.user;
-			id	   = data.id;
+			idd    = data.id;
 			cookie = data.cookie;
 			$("<p id='m'>"+bot+"</p>").insertBefore('#user');
 			$("#user").prop("disabled", false);
